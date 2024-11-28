@@ -12,7 +12,7 @@ pc = Pinecone(api_key="")
 
 index = pc.Index("allergies-index-hackaton")
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 
 def create_embedding(text):
@@ -96,5 +96,5 @@ def query_allergies():
         return jsonify({"message": f"Error processing query: {str(e)}"}), 500
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True)

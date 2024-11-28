@@ -119,5 +119,5 @@ def start_conversation():
 
 
 # Start the conversation
-if _name_ == "_main_":
+if __name__ == "_main_":
     start_conversation()
